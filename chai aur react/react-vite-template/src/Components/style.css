@@ -1,0 +1,99 @@
+/* Base button styles */
+.button-base {
+    width: 160px;
+    height: 36px;
+    display: inline-flex;
+    flex-direction: row-;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    gap: 8px;
+    /* Adjust gap between icon and label */
+    border: none;
+    position: relative;
+  }
+  
+  /* Button types */
+  .btn-primary {
+    background-color: #303486;
+    color: white;
+  }
+  
+  .btn-secondary {
+    border: 2px solid #303486;
+    color: #303486;
+    background-color: white;
+  }
+  
+  .btn-tertiary {
+    background-color: #94B9FF33;
+    color: black;
+  }
+  
+  .btn-danger {
+    background-color: #BD3B3B;
+    color: white;
+  }
+  
+  /* Colors based on color prop */
+  .color-blue {
+    background-color: blue !important;
+  }
+  
+  .color-green {
+    background-color: green !important;
+  }
+  
+  /* Disabled button styles */
+  .disabled-button {
+    background-color: #e0e0e0 !important;
+    color: #a1a1a1 !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
+  /* Loading state */
+  .loading-button {
+    cursor: wait;
+  }
+  
+  /* Loader styles */
+  .loader {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin-right: 5px;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Add styles for the icon */
+  .button-icon {
+    margin-right: 8px;
+    /* Spacing between icon and label */
+    vertical-align: middle;
+  }
+  
+  /* Add styles for the disabled state */
+  .button-disabled {
+    opacity: 0.5;
+  }
+  
+  .cursor-not-allowed {
+    cursor: not-allowed;
+  }
